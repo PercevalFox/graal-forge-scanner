@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  server1:
+    build:
+      context: .
+      dockerfile: Dockerfile.env
+    container_name: server1
+    ports:
+      - "8000:8000"
+
+  server2:
+    build:
+      context: .
+      dockerfile: Dockerfile.noenv
+    container_name: server2
+    ports:
+      - "8001:8000"
+
+  server3:
+    build:
+      context: .
+      dockerfile: Dockerfile.noenv
+    container_name: server3
+    ports:
+      - "8002:8000"
