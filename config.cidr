@@ -1,0 +1,21 @@
+[settings]
+# Webhook Discord pour alertes
+discord_webhook_url = https://discord.com/api/webhooks/
+
+# CIDR à scanner (plage d’IP)
+cidr = 127.0.0.0/30
+
+# Wordlist des endpoints sensibles
+wordlist_file = wordlist.txt
+
+# Ports à scanner (séparés par des virgules)
+ports = 80,443,1337,3000,5000,8000,8001,8002,8080,8888,9090
+
+# Nombre de threads
+threads         = 25
+
+# Timeout en secondes pour chaque requête HTTP
+timeout         = 5
+
+# Dossier de sortie pour les logs CIDR scan
+output_dir      = output_cidr
